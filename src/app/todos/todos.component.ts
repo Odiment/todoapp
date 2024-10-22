@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [],
+  imports: [HeaderComponent, MainComponent, FooterComponent],
   templateUrl: './todos.component.html',
-  styleUrl: './todos.component.css'
+  styleUrl: './todos.component.css',
 })
-export class TodosComponent {
-
-}
+export class TodosComponent {}
